@@ -1,4 +1,4 @@
-#desktop_container{
+.desktop_container{
     display: flex;
     align-items: center;
     gap: 16px;
@@ -13,8 +13,8 @@
     left: 16px;
     right: 16px;
 
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 0px;
+    z-index: 2px;
 
     > #logo{
         margin-right: auto;
@@ -30,6 +30,11 @@
         border: 1px solid transparent;
         margin: 15px 40px;
         padding: 3px 10px;
+
+        .profile_icon{
+            width: 40px;
+            height: 40px;
+        }
     }
 
     .nav_link:hover{
@@ -39,7 +44,7 @@
 }
 
 @media only screen and (max-width: 820px){
-    #desktop_container{
+    .desktop_container{
         display: none;
     }
 }
